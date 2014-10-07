@@ -1,0 +1,15 @@
+<head>
+  <title>b</title>
+</head>
+
+<body>
+  <h1>view.templateBlock test</h1>
+
+  {{#striptags allowedTags="<a>"}}
+    <p>This is a paragraph with a <a href="www.google.com">link</a></p>
+  {{/striptags}}
+
+  {{#striptags}}
+    <p>This is a paragraph with a <a href="www.google.com">link</a></p>
+  {{/striptags}}
+</body>
